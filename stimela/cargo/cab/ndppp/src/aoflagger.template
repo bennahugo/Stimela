@@ -1,0 +1,11 @@
+# Template for automatic flagging with aoflagger
+msin = INPUTMSFILE
+msin.datacolumn = INPUTMSCOLUMN
+msout = INPUTMSFILE.flag.MS
+msout.datacolumn = INPUTMSCOLUMN
+
+steps = [count,aoflag1,count]
+aoflag1.type=aoflagger
+aoflag1.memoryperc=25
+
+
